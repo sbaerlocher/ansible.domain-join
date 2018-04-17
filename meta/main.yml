@@ -1,34 +1,17 @@
 ---
 
 galaxy_info:
-  author:
-  description:
-  company:
+  author: Simon Bärlocher <s.baerlocher@sbaerlocher.ch
+  description: Adds a Windows client or Server to a domain.
   license: MIT
-  min_ansible_version: 2
+  min_ansible_version: 2.5
   platforms:
-    - name: Archlinux
+    - name: Windows
       versions:
-        - all
-    - name: EL
-      versions:
-        - 5
-        - 6
-    - name: Fedora
-      versions:
-        - 16
-        - 17
-        - 18
-    - name: Ubuntu
-      versions:
-        - precise
-        - quantal
-        - raring
-        - saucy
-    - name: Debian
-      versions:
-        - wheezy
-
-  galaxy_tags: []
+        - 2012R2
+  galaxy_tags:
+    - Windows
+    - Domain
+    - Domain-Join
 
 dependencies: []
