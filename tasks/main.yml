@@ -3,10 +3,10 @@
 
 - name: Domain Join
   win_domain_membership:
-    dns_domain_name: "{{ domain_join_domain_name }}"
-    domain_admin_user: "{{ domain_join_admin_user }}"
-    domain_admin_password: "{{ domain_join_admin_password }}"
-    # domain_ou_path: "{{ domain_join_ou }}"
+    dns_domain_name: '{{ domain_join_domain_name }}'
+    domain_admin_user: '{{ domain_join_admin_user }}'
+    domain_admin_password: '{{ domain_join_admin_password }}'
+    domain_ou_path: '{{ domain_join_ou | default(omit) }}'
     state: domain
   when: domain_join_domain_name is defined
   register: domain_join_state

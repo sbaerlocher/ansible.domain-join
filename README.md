@@ -1,6 +1,6 @@
 # Ansible Role: domain-join
 
-[![Build Status](https://travis-ci.org/sbaerlocher/ansible.domain-join.svg?branch=master)](https://travis-ci.org/sbaerlocher/ansible.domain-join) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-domain--join-blue.svg)](https://galaxy.ansible.com/sbaerlocher/domain-join)
+[![Build Status](https://travis-ci.org/sbaerlocher/ansible.domain-join.svg?branch=master)](https://travis-ci.org/sbaerlocher/ansible.domain-join) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://sbaerlo.ch/licence) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-domain--join-blue.svg)](https://galaxy.ansible.com/sbaerlocher/domain-join)
 
 ## Description
 
@@ -18,12 +18,12 @@ None
 
 ## Role Variables
 
-| Variable             | Default     | Comments (type)                                   |
-| :---                 | :---        | :---                                              |
-| domain_join_domain_name | | |
-| domain_join_admin_user | | |
-| domain_join_admin_password | | |
-| domain_join_ou | | |
+| Variable                   | Default | Comments (type) |
+| :------------------------- | :------ | :-------------- |
+| domain_join_domain_name    |         |                 |
+| domain_join_admin_user     |         |                 |
+| domain_join_admin_password |         |                 |
+| domain_join_ou             |         |                 |
 
 ## Dependencies
 
@@ -34,18 +34,18 @@ None
 ```yml
 - hosts: all
   roles:
-     - sbaerlocher.domain-join
+    - sbaerlocher.domain-join
 ```
 
 ## Changelog
 
 ### 1.0
 
-* initial commit
+- initial commit
 
 ## Author
 
-* [Simon Bärlocher](https://sbaerlocher.ch)
+- [Simon Bärlocher](https://sbaerlocher.ch)
 
 ## License
 
@@ -53,4 +53,4 @@ This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/lice
 
 ## Copyright
 
-(c) 2018, Simon Bärlocher
+(c) 2020, Simon Bärlocher
