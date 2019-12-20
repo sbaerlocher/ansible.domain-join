@@ -11,6 +11,6 @@ galaxy_info:
   galaxy_tags:
     - windows
     - domain
-    - domain-join
+    - join
 
 dependencies: []
