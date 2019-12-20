@@ -8,7 +8,7 @@
     domain_admin_password: '{{ domain_join_admin_password }}'
     domain_ou_path: '{{ domain_join_ou | default(omit) }}'
     state: domain
-  when: domain_join_domain_name is defined
+  when: ansible_os_family == 'Windows' and domain_join_domain_name is defined
   register: domain_join_state
   notify:
     - Reboot Windows
